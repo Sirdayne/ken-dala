@@ -6,7 +6,12 @@
 @f-x: "ProximaNova-Xbold";
 
 @title: #1c1c1c;
+@footer: #1c1c1c;
+
+@footer-color: rgba(255,255,255, 0.7);
+
 @btn-blue: #145081;
+@body-color: #ededee;
 
 @head-height: 45px; 
 @foot-height: 37px;
@@ -14,6 +19,8 @@
 button, input{
     font-family: @f-l;
 }
+
+body{ float: left; width: 100%; height: auto; color: @title; background: @body-color; }
 
 h1, h2, h3, h4, h5, h6{ font-family: @f-r; font-weight: bold; }
 
@@ -98,8 +105,9 @@ h1, h2, h3, h4, h5, h6{ font-family: @f-r; font-weight: bold; }
     h1{ float: left; width: 100%; font-size: 19px; margin: 14px 0 22px; text-transform: uppercase; color: #000;}
 }
 
-.btn{ width: auto; padding: 8px 45px; outline: none; border: none; -webkit-transition: .3s linear; transition: .3s linear; }
+.btn{ width: auto; box-sizing: border-box; padding: 8px 45px; outline: none; border: none; -webkit-transition: .3s linear; transition: .3s linear; }
 .btn-left{ float: left; }
+.btn-right{ float: right; }
 .btn-center{ display: inline-block; }
 .btn-blue{ color: #fff; background: @btn-blue; border: 1px solid @btn-blue; font-size: 12px; 
     &:hover{ background: rgba(0,0,0,0); color: @btn-blue; }
@@ -138,3 +146,68 @@ h1, h2, h3, h4, h5, h6{ font-family: @f-r; font-weight: bold; }
 .msb-7{ top: 1850px; left: 0; background: url('../img/service7.png') center center no-repeat; background-size: cover; }
 
 .msb-8{ top: 1950px; right: 0; background: url('../img/service8.png') center center no-repeat; background-size: cover; }
+
+.main-portfolio{ float: left; width: 100%; margin-top: 40px;
+    h2{ float: left; width: 100%; font-family: @f-x; text-align: center; color: @title; font-size: 35px; }
+
+    h3{ float: left; width: 50%; margin: 10px 25% 0; text-align: center; font-size: 16px; }
+
+    h4{ float: left; width: 100%; margin-top: 40px; text-align: center; font-size: 16px; }
+}
+
+.ss-box{ float: left; width: 100%; height: auto; display: flex; background: #fff; }
+
+.ss-img{ width: 330px; }
+
+.ss-img-1{ background: url('../img/slide-nu.png') center center no-repeat; background-size: cover; }
+
+.ss-txt{ width: ~'calc(100% - 330px)'; box-sizing: border-box; padding: 40px;
+    h5{ float: left; width: 100%; font-size: 25px; font-family: @f-b; }
+    p{ float: left; margin: 10px 0; width: 100%; font-size: 15px; }
+}
+
+.section-call{ float: left; width: 100%; margin-top: 60px; }
+
+.cloud-call{ float: left; width: 100%; box-sizing: border-box; padding: 50px; background: #fff;
+    h2{ float: left; width: 100%; font-family: @f-x; text-align: center; color: @title; font-size: 35px; }
+
+    h3{ float: left; width: 50%; margin: 5px 25% 40px; text-align: center; font-size: 16px; }
+
+    input{ float: left; width: 220px; box-sizing: border-box; padding: 8px; outline: none; border:none; border: 1px solid #000; background: rgba(0,0,0,0); font-size: 13px; text-align: center; }
+
+    button{ padding: 8px; width: 220px; }
+}
+
+.inputs-row{ float: left; width: 100%; display: flex; justify-content: space-around}
+
+.footer{ float: left; margin-top: 70px; box-sizing: border-box; padding: 0; width: 100%; background: @footer; }
+.wrap-footer{ float: left; width: 85%; margin-left: 15%; }
+
+.footer-txt{ float: left; width: ~'calc(64% - 50px)'; margin-top: 50px; margin-right: 50px; display: flex; justify-content: space-between; }
+
+.footer-map{ float: right; width: 36%; height: 280px; }
+
+.footer-logo{ margin-top: 30px; width: 150px; height: auto;
+    img{ width: 100%; height: auto; }
+}
+
+.footer-navigation{ width: 150px;
+    .foot{ float: left; margin-top: 8px; width: 100%; font-size: 14px; color: @footer-color;
+        &:hover{ color: #fff; }
+    }
+}
+
+.footer-address{ width: 245px; margin-top: 10px;
+    p{ float: left; width: 100%; font-size: 14px; margin-top: 5px; color: @footer-color; text-align: right; }
+}
+
+.footer-gi{ float: right; margin-top: 70px; width: auto; height: 22px;
+    span{ float: left; width: auto; margin-right: 10px; font-size: 12px; height: 22px; line-height: 22px; color: @footer-color; -webkit-transition: .2s linear; transition: .2s linear; text-transform: uppercase; }
+    svg{ float: left; width: auto; height: 20px; }
+    path{ -webkit-transition: .2s linear; transition: .2s linear; fill: @footer-color; }
+
+    &:hover{
+        span{ color: #fff; }
+        path{ fill: #2281c1; }
+    }
+}

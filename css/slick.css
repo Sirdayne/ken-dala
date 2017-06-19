@@ -321,25 +321,25 @@
 }
 .slick-prev{
     position: absolute;
-    top: 15px;
-    left: -80px;
+    top: 105px;
+    left: -40px;
     z-index: 5;
     
-    height: 46px;
-    width: 24px;
-    background: url(../img/icons/main-left.svg) center center no-repeat;
-    background-size: cover;
+    height: 30px;
+    width: 30px;
+    background: url(../img/icons/slider-left.png) center center no-repeat;
+    background-size: contain;
 }
  .slick-next{
     position: absolute;
-    top: 15px;
-    right: -35px;
+    top: 105px;
+    right: -40px;
     z-index: 5;
      
-    height: 46px;
-    width: 24px;
-    background: url(../img/icons/main-right.svg) center center no-repeat;
-    background-size: cover;
+    height: 30px;
+    width: 30px;
+    background: url(../img/icons/slider-right.png) center center no-repeat;
+    background-size: contain;
 }
 .slick-img{
     float: left;
