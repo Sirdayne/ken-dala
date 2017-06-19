@@ -133,33 +133,69 @@ $(document).ready(function () {
         $(this).toggleClass('nav-active');
     });
 
+    $('body').on('click', '.nav-btn', function () {
+        $('.nav-menu').toggleClass('js-active');
+    });
+
     // WOW ANIMATIONS
 
-    function animate(animationClass, animation, quantity, startTime, coefTime){
+    for (var i = 0; i < 8; i++) {
+        if (i % 2 == 0 )
+        {
+            $('.ms-box').eq(i).attr('data-start','transform:translateY(+'+(-1)*i*i*5+'px);');
+            $('.ms-box').eq(i).attr('data-end','transform:translateY('+i*i*9+'px);')
+        }
+        else
+        {
+            $('.ms-box').eq(i).attr('data-start','transform:translateY(+'+(-1)*i*i*8+'px);');
+            $('.ms-box').eq(i).attr('data-end','transform:translateY('+i*i*4+'px);');
+        }
+    }
 
-        if( !startTime ){ startTime = 0.2 }
+    function animate(animationClass, animation, quantity, startTime, coefTime) {
 
-        if( !coefTime ){ coefTime = 3 }
+        if (!startTime) {
+            startTime = 0.2
+        }
+
+        if (!coefTime) {
+            coefTime = 3
+        }
 
         var wowCycle = 0;
 
         $(animationClass).addClass('wow ' + animation);
 
-        for(var i = 0; i < quantity; i++){
+        for (var i = 0; i < quantity; i++) {
 
-            wowCycle = startTime + i/coefTime + 's';
+            wowCycle = startTime + i / coefTime + 's';
             $(animationClass).eq(i).attr("data-wow-delay", wowCycle);
             wowCycle = 0;
         }
     }
 
-    animate('.sc-img', 'slideInLeft', 5);
-    animate('.sc-txt', 'slideInRight', 5, 0.5);
 
-    animate('.sa-box', 'fadeIn', 3);
+    $(function () {
+    if ($(window).width() > 991) {
+        (function ($) {
+            var s = skrollr.init({
+                render: function (data) {}
+            });
+        })(jQuery);
+        $(window).on('resize', function () {
+            if ($(window).width() <= 974) {
+                $('.ms-box').addClass('notrans');
+            } else {
+                (function ($) {
+                    var s = skrollr.init({
+                        render: function (data) {}
+                    });
+                })(jQuery);
+                $('.ms-box').removeClass('notrans');
+            }
+        });
+    }
 
-    animate('.sa-service', 'fadeIn', 5, 0.1, 50);
-
-    animate('.box-process', 'fadeIn', 7, 0.1, 10);
+});
 
 });

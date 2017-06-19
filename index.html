@@ -42,6 +42,58 @@
 
 </div>-->
 
+    <div class="modal-wrapper">
+        <div class="modal modal-phone">
+            <!--<div class="modal-close"></div>-->
+
+            <div class="modal-title">Заполните форму ниже и получите бесплатную консультацию от нашего специалиста</div>
+
+            <form method="post" action="">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="kendala.ginnova.kz">
+
+                <input type="hidden" name="admin_email" value="tester@ginnova.kz">
+                <input type="hidden" name="form_subject" value="Заявка">
+                <!-- END Hidden Required Fields -->
+
+                <div class="inputs-row">
+                    <input type="text" placeholder="Имя" required>
+                    <input type="tel" class="client-tel" placeholder="Телефон" required>
+                    <button class="btn btn-blue">ОТПРАВИТЬ</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="modal modal-message">
+            <!--<div class="modal-close"></div>-->
+
+            <div class="modal-title">Задайте свой вопрос и получите ответ от наших специалистов</div>
+
+            <form method="post" action="">
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="kendala.ginnova.kz">
+
+                <input type="hidden" name="admin_email" value="tester@ginnova.kz">
+                <input type="hidden" name="form_subject" value="Заявка">
+                <!-- END Hidden Required Fields -->
+
+                <div class="modal-inputs">
+                    <input type="text" placeholder="Имя" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <button class="btn btn-blue btn-left">ОТПРАВИТЬ</button>
+                </div>
+
+                <textarea placeholder="Сообщение"></textarea>
+
+            </form>
+        </div>
+
+        <div class="thx"><p>СПАСИБО! С ВАМИ СВЯЖЕТСЯ НАШ МЕНЕДЖЕР</p></div>
+
+        <div class="modal-back"></div>
+
+    </div>
+
     <header class="header">
 
         <div class="wrap">
@@ -66,12 +118,23 @@
                             <span class="nav-line"></span>
                         </nav>
                     </a>
-                    <a href="">
-                        <nav class="nav">
+
+                        <nav class="nav nav-btn">
                             <p>Направления</p>
                             <span class="nav-line"></span>
+
+                            <div class="nav-menu">
+                                <a href="">МУЛЬТИМЕДИЙНЫЕ СИСТЕМЫ</a>
+                                <a href="">СИСТЕМЫ ТЕЛЕКОММУНИКАЦИИ</a>
+                                <a href="">СИСТЕМЫ ПОЖАРНОЙ СИГНАЛИЗАЦИИ</a>
+                                <a href="">АСУД (BMS)</a>
+                                <a href="">СИСТЕМЫ КОНТРОЛЯ ДОСТУПА</a>
+                                <a href="">СИСТЕМЫ ВИДЕОНАБЛЮДЕНИЯ</a>
+                                <a href="">3D MAPPING</a>
+                                <a href="">ПРОЕКТИРОВАНИЕ</a>
+                            </div>
                         </nav>
-                    </a>
+
                     <a href="">
                         <nav class="nav">
                             <p>Оборудование</p>
@@ -310,6 +373,8 @@
         });
 
     </script>
+
+    <script src="js/skrollr.js"></script>
 
     <script src="js/script.js"></script>
 
