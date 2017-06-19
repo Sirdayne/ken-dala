@@ -1,0 +1,140 @@
+/* CONSTANTS */
+@f-r: "ProximaNova-Reg";
+@f-b: "ProximaNova-Bold";
+@f-l: "ProximaNova-Light";
+@f-h: "ProximaNova-Black";
+@f-x: "ProximaNova-Xbold";
+
+@title: #1c1c1c;
+@btn-blue: #145081;
+
+@head-height: 45px; 
+@foot-height: 37px;
+
+button, input{
+    font-family: @f-l;
+}
+
+h1, h2, h3, h4, h5, h6{ font-family: @f-r; font-weight: bold; }
+
+.modal-back{ position: fixed; top: 0; left: 0; width: 100%; height: 9000px; background: rgba(0,0,0,0.5); z-index: 11; display: none; }
+
+.modal-wrapper{ position: fixed; height: 0; top: 0; left: 0; width: 100%; z-index: 12; }
+
+.modal-close{  position: absolute; height: 40px;  width: 40px; 
+    background: url(../img/modal-close.png) center center no-repeat; background-size: cover;
+    top: 25px; right: 25px; cursor: pointer;}
+
+.modal .modal-close, .modal-calc .modal-close{  top: 10px;  right: 10px;  height: 30px;   width: 30px; }
+
+.opacity-one{ opacity: 1; }
+
+.modal{  display: block;  margin: 150px auto;  height: auto;  min-height: 200px; max-width: 700px; width: 90%; background: #fff; color: #3b3b3b;
+    text-align: center; z-index: 4; padding-top: 20px; padding-bottom: 2px; display: none; position: relative; }
+
+.btns-row{ float: left; width: 100%; margin-top: 25px;}
+
+.modal input { display: inline-block; width: 140px; padding: 10px 25px; margin-right: 20px; margin-left: 20px; height: 12px; outline: none;
+    border: none; border: 1px solid #5d4063; background: rgba(0,0,0,0); -webkit-transition: .2s linear; transition: .2s linear; font-size: 12px; font-family: @f-r; 
+}
+
+.btn-wrap{ float: left; width: 100%; text-align: center; }
+
+.btn-black{ width: auto; outline:none; box-sizing: border-box; padding: 7px 15px; border: 1px solid #000; color: #000;
+    background: rgba(0,0,0,0); -webkit-transition: .3s linear; transition: .3s linear;
+    &:hover{ color: #fff; background: #000; }
+}
+
+.send-btn{
+    display: inline-block;
+}
+
+.modal-title{ float: left; width: 100%; text-align: center; margin-top: 20px; font-size: 16px; font-family: @f-l; }
+
+.thx{
+    display: block; margin: 150px auto; height: auto;
+    width: 270px; background: #fff; ;
+    box-sizing: border-box; 
+    -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px;
+    outline: none; border: none; border: 1px solid #5d4063; font-size: 13px; padding: 40px 25px; text-align: center; z-index: 13; display: none;
+    p{ font-size: 13px; }
+}
+
+#vue-app{ float: left; width: 100%; }
+
+.wrap{ float: left; width: 70%; margin-left: 15%; margin-right: 15%; height: auto; }
+
+.header{ float: left; width: 100%; height: 500px; box-sizing: border-box; padding: 100px 0 0; background: url("../img/header-main.png") center center no-repeat; background-size: cover; 
+    .wrap{ position: relative; }
+}
+
+.navigation{ float: left; width: 100%; }
+
+.nav-logo{ float: left; width: 175px; height: auto; 
+    img{ float: left; width: 100%; height: auto; }
+}
+
+.nav-center{ float: left; width: ~"calc( 100% - 350px)"; margin: 0 37px 0 23px; display: flex; justify-content: space-around; }
+
+.nav{ display: block; position: relative;
+    p{ color: #fff; text-transform: uppercase; font-size: 12px; line-height: 27px; }
+    
+    &:hover .nav-line{ width: 100%; }
+}
+
+.nav-line{ position: absolute; bottom: 2px; left: 0;  height: 1px; width: 0; background: #fff; -webkit-transition: .3s linear; transition: .3s linear; }
+
+.header-contacts{ float: right; width: 115px; height: auto;}
+
+.hc-row{ float: left; width: 100%; margin-top: 3px;
+    img{ float: left; height: 10px; margin: 5px 5px 5px 0; width: auto; }
+    p{ float: left; width: auto; height: 20px; line-height: 20px; font-size: 11px; color: #fff; }
+}
+
+.header-video{ float: left; margin-top: 50px; height: 450px; width: 100%; background: url('../img/header-video.png') center center no-repeat; background-size: cover; }
+
+.hv-txt{ position: absolute; padding: 30px; bottom: 0; left: 0; width: 55%; height: auto; background: #fff;
+    p{ float: left; width: 100%; font-size: 14px; color: #000; font-weight: bold; }
+    h1{ float: left; width: 100%; font-size: 19px; margin: 14px 0 22px; text-transform: uppercase; color: #000;}
+}
+
+.btn{ width: auto; padding: 8px 45px; outline: none; border: none; -webkit-transition: .3s linear; transition: .3s linear; }
+.btn-left{ float: left; }
+.btn-center{ display: inline-block; }
+.btn-blue{ color: #fff; background: @btn-blue; border: 1px solid @btn-blue; font-size: 12px; 
+    &:hover{ background: rgba(0,0,0,0); color: @btn-blue; }
+}
+
+.main-services{ float: left; width: 100%; margin-top: 250px; 
+    h2{ float: left; width: 100%; font-family: @f-x; text-align: center; color: @title; font-size: 35px; }
+}
+
+.ms-parallax{ float: left; width: 100%; height: 2550px; background: url('../img/parallax-main.png') center center no-repeat; background-size: contain; 
+    .wrap{ position: relative; height: 100%; }
+}
+
+.ms-box{ position: absolute; height: 480px; width: 320px; overflow: hidden; box-shadow: 0 0 14px rgba(0,0,0,0.7); }
+
+.msb-txt{ position: absolute; bottom: -95px; left: 0; width: 100%; box-sizing: border-box; padding: 30px; background: #fff; text-align: center; -webkit-transition: .5s linear; transition: .5s linear;
+    h3{ float: left; width: 100%; font-size: 16px; line-height: 18px; text-transform: uppercase; }
+    p{ float: left; width: 100%; color: #000; margin: 30px 0; font-size: 0; -webkit-transition: .3s linear; transition: .3s linear;}
+    &:hover{ bottom: 0;
+        p{ font-size: 13px; }    
+    }
+}
+
+.msb-1{ top: 110px; left: 0; background: url('../img/service1.png') center center no-repeat; background-size: cover; }
+
+.msb-2{ top: 210px; left: auto; right: 0; background: url('../img/service2.png') center center no-repeat; background-size: cover; }
+
+.msb-3{ top: 690px; left: 0; background: url('../img/service3.png') center center no-repeat; background-size: cover; }
+
+.msb-4{ top: 790px; right: 0; background: url('../img/service4.png') center center no-repeat; background-size: cover; }
+
+.msb-5{ top: 1270px; left: 0; background: url('../img/service5.png') center center no-repeat; background-size: cover; }
+
+.msb-6{ top: 1370px; right: 0; background: url('../img/service6.png') center center no-repeat; background-size: cover; }
+
+.msb-7{ top: 1850px; left: 0; background: url('../img/service7.png') center center no-repeat; background-size: cover; }
+
+.msb-8{ top: 1950px; right: 0; background: url('../img/service8.png') center center no-repeat; background-size: cover; }
