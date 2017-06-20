@@ -196,7 +196,7 @@ h6 {
 .header-service {
   background: #1c1c1c;
   height: 350px;
-  margin-bottom: 600px;
+  margin-bottom: 300px;
 }
 .navigation {
   float: left;
@@ -845,11 +845,183 @@ h6 {
 .md-mail {
   top: 235px;
 }
-.section-services {
+.section-attendances {
   float: left;
   width: 100%;
+  margin-top: 60px;
+  height: 500px;
   position: relative;
 }
-.section-services h3 {
+.section-attendances .wrap {
+  position: relative;
+  height: 100%;
+}
+.section-attendances h3 {
   position: absolute;
+  top: 30px;
+  right: 40px;
+  width: auto;
+  font-family: "ProximaNova-Black";
+  font-size: 26px;
+}
+.sa-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 250px;
+  width: 45%;
+  background: url('../img/service-image.png') center center no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.sa-txt {
+  position: absolute;
+  padding: 30px 50px;
+  box-sizing: border-box;
+  top: 100px;
+  right: 0;
+  width: 80%;
+  background: #fff;
+  z-index: 2;
+}
+.sa-row {
+  float: left;
+  margin-top: 10px;
+  width: 100%;
+  height: 20px;
+}
+.sa-row img {
+  float: left;
+  height: 12px;
+  margin: 4px 10px 4px 0;
+  width: auto;
+}
+.sa-row p {
+  float: left;
+  width: auto;
+  font-size: 14px;
+  line-height: 20px;
+}
+.section-advantages {
+  float: left;
+  width: 100%;
+  margin-top: 60px;
+  height: 450px;
+}
+.section-advantages .wrap {
+  position: relative;
+  height: 100%;
+}
+.section-advantages h3 {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  width: auto;
+  font-family: "ProximaNova-Black";
+  font-size: 26px;
+}
+.sad-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 250px;
+  width: 45%;
+  background: url('../img/service-advantages.png') center center no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+.sad-txt {
+  position: absolute;
+  padding: 30px 50px;
+  box-sizing: border-box;
+  top: 100px;
+  left: 0;
+  width: 80%;
+  background: #fff;
+  z-index: 2;
+}
+.sad-row {
+  float: left;
+  margin-top: 5px;
+  width: 100%;
+  height: 30px;
+}
+.sad-row img {
+  float: left;
+  height: 28px;
+  margin: 1px 15px 1px 0;
+  width: auto;
+}
+.sad-row p {
+  float: left;
+  width: auto;
+  font-size: 16px;
+  line-height: 30px;
+}
+.section-principles {
+  float: left;
+  width: 100%;
+}
+.section-principles h3 {
+  float: left;
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+  font-family: "ProximaNova-Black";
+  font-size: 26px;
+}
+.sp-box {
+  float: left;
+  width: 40%;
+  box-sizing: border-box;
+  padding: 55px 0 0 40px;
+  position: relative;
+}
+.sp-box span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 90px;
+  color: #abbecd;
+  font-family: "ProximaNova-Xbold";
+  z-index: 1;
+}
+.sp-box p {
+  position: relative;
+  float: left;
+  width: 100%;
+  font-size: 16px;
+  z-index: 2;
+}
+.sp-box-left {
+  margin-right: 60%;
+}
+.sp-box-left span {
+  top: 0;
+  left: 0;
+}
+.sp-box-right {
+  margin-left: 60%;
+}
+.sp-box-right span {
+  top: 0;
+  left: 0;
+}
+.lane-1 {
+  position: absolute;
+  z-index: 1;
+  top: 400px;
+  right: 50px;
+  height: 5px;
+  width: 50%;
+  background: #fff;
+}
+.lane-2 {
+  position: absolute;
+  z-index: 1;
+  top: 400px;
+  right: 50px;
+  height: 450px;
+  width: 5px;
+  background: #fff;
 }

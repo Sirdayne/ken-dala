@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6{ font-family: @f-r; font-weight: bold; }
     .wrap{ position: relative; }
 }
 
-.header-service{ background: @title; height: 350px; margin-bottom: 600px; }
+.header-service{ background: @title; height: 350px; margin-bottom: 300px; }
 
 .navigation{ float: left; width: 100%; }
 
@@ -302,6 +302,53 @@ h1, h2, h3, h4, h5, h6{ font-family: @f-r; font-weight: bold; }
 .md-phone{ top: 200px; }
 .md-mail{ top: 235px; }
 
-.section-services{ float: left; width: 100%; position: relative;
-    h3{ position: absolute; }
+.section-attendances{ float: left; width: 100%; margin-top: 60px; height: 500px; position: relative;
+    .wrap{ position: relative; height: 100%; }
+
+    h3{ position: absolute; top: 30px; right: 40px; width: auto; font-family: @f-h; font-size: 26px; }
 }
+
+.sa-img{ position: absolute; top: 0; left: 0; height: 250px; width: 45%; background: url('../img/service-image.png') center center no-repeat; background-size: cover; z-index: 1; }
+
+.sa-txt{ position: absolute; padding: 30px 50px; box-sizing: border-box; top: 100px; right: 0; width: 80%; background: #fff; z-index: 2; }
+
+.sa-row{ float: left; margin-top: 10px; width: 100%; height: 20px;
+    img{ float: left; height: 12px; margin: 4px 10px 4px 0; width: auto; }
+    p{ float: left; width: auto; font-size: 14px; line-height: 20px; }
+}
+
+.section-advantages{ float: left; width: 100%; margin-top: 60px; height: 450px;
+    .wrap{ position: relative; height: 100%; }
+
+    h3{ position: absolute; top: 30px; left: 40px; width: auto; font-family: @f-h; font-size: 26px; }
+}
+
+.sad-img{ position: absolute; top: 0; right: 0; height: 250px; width: 45%; background: url('../img/service-advantages.png') center center no-repeat; background-size: cover; z-index: 1; }
+
+.sad-txt{ position: absolute; padding: 30px 50px; box-sizing: border-box; top: 100px; left: 0; width: 80%; background: #fff; z-index: 2; }
+
+.sad-row{ float: left; margin-top: 5px; width: 100%; height: 30px;
+    img{ float: left; height: 28px; margin: 1px 15px 1px 0; width: auto; }
+    p{ float: left; width: auto; font-size: 16px; line-height: 30px; }
+}
+
+.section-principles{ float: left; width: 100%;
+    h3{ float: left; width: 100%; margin-bottom: 40px; text-align: center; font-family: @f-h; font-size: 26px; }
+}
+
+.sp-box{ float: left; width: 40%; box-sizing: border-box; padding: 55px 0 0 40px; position: relative;
+    span{ position: absolute; top: 0; left: 0; font-size: 90px; color: #abbecd; font-family: @f-x; z-index: 1; }
+    p{ position: relative; float: left; width: 100%; font-size: 16px; z-index: 2; }
+}
+
+.sp-box-left{ margin-right: 60%;
+    span{ top: 0; left: 0;  }
+}
+
+.sp-box-right{ margin-left: 60%;
+    span{ top: 0; left: 0;  }
+}
+
+.lane-1{ position: absolute; z-index: 1; top: 400px; right: 50px; height: 5px; width: 50%; background: #fff; }
+
+.lane-2{ position: absolute; z-index: 1; top: 400px; right: 50px; height: 450px; width: 5px; background: #fff; }
