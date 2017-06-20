@@ -176,9 +176,9 @@ h6 {
 }
 .wrap {
   float: left;
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
   height: auto;
 }
 .header {
@@ -328,7 +328,7 @@ h6 {
   padding: 30px;
   bottom: 0;
   left: 0;
-  width: 55%;
+  width: 480px;
   height: auto;
   background: #fff;
   z-index: 3;
@@ -537,51 +537,68 @@ h6 {
 .msb-txt:hover p {
   font-size: 13px;
 }
+/*
+.msb-1{ top: 110px; left: 0; background: url('../img/service1.png') center center no-repeat; background-size: cover; }
+
+.msb-2{ top: 210px; left: auto; right: 0; background: url('../img/service2.png') center center no-repeat; background-size: cover; }
+
+.msb-3{ top: 690px; left: 0; background: url('../img/service3.png') center center no-repeat; background-size: cover; }
+
+.msb-4{ top: 790px; right: 0; background: url('../img/service4.png') center center no-repeat; background-size: cover; }
+
+.msb-5{ top: 1270px; left: 0; background: url('../img/service5.png') center center no-repeat; background-size: cover; }
+
+.msb-6{ top: 1370px; right: 0; background: url('../img/service6.png') center center no-repeat; background-size: cover; }
+
+.msb-7{ top: 1850px; left: 0; background: url('../img/service7.png') center center no-repeat; background-size: cover; }
+
+.msb-8{ top: 1950px; right: 0; background: url('../img/service8.png') center center no-repeat; background-size: cover; }
+*/
 .msb-1 {
-  top: 110px;
+  top: 0px;
   left: 0;
   background: url('../img/service1.png') center center no-repeat;
   background-size: cover;
 }
 .msb-2 {
-  top: 210px;
+  top: 0px;
   left: auto;
   right: 0;
   background: url('../img/service2.png') center center no-repeat;
   background-size: cover;
 }
 .msb-3 {
-  top: 690px;
+  top: 0px;
   left: 0;
   background: url('../img/service3.png') center center no-repeat;
   background-size: cover;
 }
 .msb-4 {
-  top: 790px;
+  top: 0px;
   right: 0;
   background: url('../img/service4.png') center center no-repeat;
   background-size: cover;
 }
 .msb-5 {
-  top: 1270px;
+  top: 0px;
   left: 0;
   background: url('../img/service5.png') center center no-repeat;
   background-size: cover;
 }
 .msb-6 {
-  top: 1370px;
+  top: 0px;
   right: 0;
   background: url('../img/service6.png') center center no-repeat;
   background-size: cover;
 }
 .msb-7 {
-  top: 1850px;
+  top: 0px;
   left: 0;
   background: url('../img/service7.png') center center no-repeat;
   background-size: cover;
 }
 .msb-8 {
-  top: 1950px;
+  top: 0px;
   right: 0;
   background: url('../img/service8.png') center center no-repeat;
   background-size: cover;
@@ -703,8 +720,8 @@ h6 {
 }
 .wrap-footer {
   float: left;
-  width: 85%;
-  margin-left: 15%;
+  width: 80%;
+  margin-left: 20%;
 }
 .footer-txt {
   float: left;
