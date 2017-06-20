@@ -153,7 +153,6 @@ $(document).ready(function () {
 
     // WOW ANIMATIONS
 
-
     $('.ms-box').eq(0).attr('data-start','transform:translateY(+'+50+'px);');
     $('.ms-box').eq(0).attr('data-end','transform:translateY('+350+'px);');
 
