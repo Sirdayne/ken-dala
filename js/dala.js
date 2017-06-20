@@ -137,6 +137,20 @@ $(document).ready(function () {
         $('.nav-menu').toggleClass('js-active');
     });
 
+    $('body').on('click', '.md-phone', function () {
+        $('.modal-phone').show(500);
+        $('.modal-back').show(500);
+    });
+
+    $('body').on('click', '.md-mail', function () {
+        $('.modal-message').show(500);
+        $('.modal-back').show(500);
+    });
+
+    $('body').on('click', '.modal-back', function () {
+        $('.modal, .modal-back').hide(500);
+    });
+
     // WOW ANIMATIONS
 
     for (var i = 0; i < 8; i++) {

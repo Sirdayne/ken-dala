@@ -26,7 +26,7 @@ h6 {
   width: 100%;
   height: 9000px;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 2;
+  z-index: 5;
   display: block;
   display: none;
 }
@@ -62,13 +62,13 @@ h6 {
   display: none;
   margin: 150px auto;
   height: auto;
-  min-height: 200px;
+  min-height: 160px;
   max-width: 700px;
   width: 90%;
   background: #fff;
   color: #3b3b3b;
   text-align: center;
-  z-index: 4;
+  z-index: 6;
   padding-top: 20px;
   padding-bottom: 2px;
   position: relative;
@@ -102,8 +102,7 @@ h6 {
   width: 100%;
 }
 .modal-message {
-  display: block;
-  min-height: 280px;
+  min-height: 320px;
   box-sizing: border-box;
   padding: 20px;
 }
@@ -193,6 +192,11 @@ h6 {
 }
 .header .wrap {
   position: relative;
+}
+.header-service {
+  background: #1c1c1c;
+  height: 350px;
+  margin-bottom: 600px;
 }
 .navigation {
   float: left;
@@ -294,11 +298,30 @@ h6 {
 }
 .header-video {
   float: left;
-  margin-top: 50px;
+  margin-top: 30px;
   height: 450px;
   width: 100%;
   background: url('../img/header-video.png') center center no-repeat;
   background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+.header-video video {
+  position: absolute;
+  width: calc(100% + 200px);
+  height: auto;
+  top: -100px;
+  left: 0;
+  z-index: 2;
+}
+.head-service {
+  float: left;
+  margin-top: 30px;
+  height: 450px;
+  width: 100%;
+  background: url('../img/head-service.png') center center no-repeat;
+  background-size: cover;
+  position: relative;
 }
 .hv-txt {
   position: absolute;
@@ -308,6 +331,7 @@ h6 {
   width: 55%;
   height: auto;
   background: #fff;
+  z-index: 3;
 }
 .hv-txt p {
   float: left;
@@ -320,9 +344,95 @@ h6 {
   float: left;
   width: 100%;
   font-size: 19px;
+  font-family: "ProximaNova-Xbold";
+  font-weight: normal;
   margin: 14px 0 22px;
   text-transform: uppercase;
   color: #000;
+}
+.hv-txt span {
+  display: inline-block;
+  font-size: 19px;
+  width: auto;
+}
+.hs-txt {
+  position: absolute;
+  padding: 0px 0px 60px 30px;
+  box-sizing: border-box;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: auto;
+  z-index: 3;
+}
+.hs-txt h1 {
+  float: left;
+  width: 100%;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: "ProximaNova-Xbold";
+  letter-spacing: 1px;
+}
+.hs-txt p {
+  float: left;
+  margin-top: 15px;
+  width: 90%;
+  color: #fff;
+  font-size: 14px;
+}
+.hs-btns {
+  position: absolute;
+  padding: 0px 30px 80px 0px;
+  box-sizing: border-box;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  height: auto;
+  text-align: center;
+}
+.hs-btns button {
+  padding: 8px 45px;
+  margin: 0 5px;
+}
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .btn {
   width: auto;
@@ -351,6 +461,16 @@ h6 {
 .btn-blue:hover {
   background: rgba(0, 0, 0, 0);
   color: #145081;
+}
+.btn-trans {
+  color: #fff;
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  font-size: 12px;
+}
+.btn-trans:hover {
+  background: #fff;
+  color: #1c1c1c;
 }
 .main-services {
   float: left;
@@ -666,4 +786,53 @@ h6 {
 }
 .footer-gi:hover path {
   fill: #2281c1;
+}
+.md-fixed {
+  position: fixed;
+  right: 0;
+  height: 30px;
+  width: 30px;
+  background: #145081;
+  cursor: pointer;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+.md-fixed img {
+  float: left;
+  height: 18px;
+  margin: 6px 5px;
+  width: auto;
+}
+.md-fixed p {
+  float: left;
+  width: auto;
+  height: 100%;
+  margin: 0 5px;
+  font-size: 0px;
+  line-height: 30px;
+  color: #fff;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  opacity: 0;
+}
+.md-fixed:hover {
+  width: 150px;
+}
+.md-fixed:hover p {
+  font-size: 13px;
+  opacity: 1;
+}
+.md-phone {
+  top: 200px;
+}
+.md-mail {
+  top: 235px;
+}
+.section-services {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.section-services h3 {
+  position: absolute;
 }

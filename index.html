@@ -42,6 +42,16 @@
 
 </div>-->
 
+    <div class="md-fixed md-phone">
+        <img src="./img/icons/md-phone.png" alt="">
+        <p>Заказать звонок</p>
+    </div>
+
+    <div class="md-fixed md-mail">
+        <img src="./img/icons/md-mail.png" alt="">
+        <p>Написать нам</p>
+    </div>
+
     <div class="modal-wrapper">
         <div class="modal modal-phone">
             <!--<div class="modal-close"></div>-->
@@ -170,10 +180,14 @@
 
             <div class="header-video">
 
+                <video autoplay loop muted>
+                  <source src="./video/header-video.mp4" type="video/mp4">
+                </video>
+
                 <div class="hv-txt">
                     <p>Динамично развивающаяся компания, специализирующаяся на предоставлении высокопрофессиональных услуг:</p>
 
-                    <h1>мультимедийные системы</h1>
+                    <h1><span id="typed"></span></h1>
 
                     <button class="btn btn-left btn-blue">УЗНАТЬ БОЛЬШЕ</button>
                 </div>
@@ -374,6 +388,22 @@
 
     </script>
 
+    <script src="js/typed.js"></script>
+
+    <script>
+        $(function () {
+            $("#typed").typed({
+                strings: ["мультимедийные системы", "системы телекоммуникации", "системы пожарной сигнализации", "системы управления и диспетчеризации", "отделочные работы", "системы контроля и управления доступом", "системы видеонаблюдения", "3d mapping", "проектирование"],
+                typeSpeed: 50,
+                backSpeed: 10,
+                startDelay: 100,
+                backDelay: 800,
+                loop: true,
+                loopCount: false,
+            })
+        });
+    </script>
+
     <script src="js/skrollr.js"></script>
 
     <script src="js/script.js"></script>
@@ -409,43 +439,6 @@
                 autoplay: false,
                 autoplaySpeed: 2800,
             });
-
-            /*
-                
-            $('#slick-slider-0').slick({
-                centerMode: false,
-                slidesToShow: 1,
-                centerPadding: '0px',
-                arrows: true,
-                dots: false,
-                autoplay: true,
-                autoplaySpeed: 4000,
-            });
-    
-            $('.slick-slider-1').slick({
-                centerMode: false,
-                slidesToShow: 3,
-                centerPadding: '0px',
-                arrows: true,
-                dots: false,
-                autoplay: true,
-                autoplaySpeed: 4000,
-                responsive: [
-                {
-                  breakpoint: 1000,
-                  settings: {
-                    slidesToShow: 2,
-                  }
-                },
-                {
-                  breakpoint: 700,
-                  settings: {
-                    slidesToShow: 1,
-                  }
-                }
-            ]
-            });
-                */
 
 
         });
