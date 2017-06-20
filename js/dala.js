@@ -155,25 +155,25 @@ $(document).ready(function () {
 
 
     $('.ms-box').eq(0).attr('data-start','transform:translateY(+'+50+'px);');
-    $('.ms-box').eq(0).attr('data-end','transform:translateY('+250+'px);');
+    $('.ms-box').eq(0).attr('data-end','transform:translateY('+350+'px);');
 
     $('.ms-box').eq(1).attr('data-start','transform:translateY(+'+250+'px);');
-    $('.ms-box').eq(1).attr('data-end','transform:translateY('+170+'px);');
+    $('.ms-box').eq(1).attr('data-end','transform:translateY('+70+'px);');
 
     $('.ms-box').eq(2).attr('data-start','transform:translateY(+'+800+'px);');
-    $('.ms-box').eq(2).attr('data-end','transform:translateY('+520+'px);');
+    $('.ms-box').eq(2).attr('data-end','transform:translateY('+420+'px);');
 
     $('.ms-box').eq(3).attr('data-start','transform:translateY(+'+670+'px);');
-    $('.ms-box').eq(3).attr('data-end','transform:translateY('+1000+'px);');
+    $('.ms-box').eq(3).attr('data-end','transform:translateY('+1100+'px);');
 
-    $('.ms-box').eq(4).attr('data-start','transform:translateY(+'+1200+'px);');
-    $('.ms-box').eq(4).attr('data-end','transform:translateY('+1400+'px);');
+    $('.ms-box').eq(4).attr('data-start','transform:translateY(+'+1100+'px);');
+    $('.ms-box').eq(4).attr('data-end','transform:translateY('+1500+'px);');
 
-    $('.ms-box').eq(5).attr('data-start','transform:translateY(+'+1600+'px);');
-    $('.ms-box').eq(5).attr('data-end','transform:translateY('+1300+'px);');
+    $('.ms-box').eq(5).attr('data-start','transform:translateY(+'+1700+'px);');
+    $('.ms-box').eq(5).attr('data-end','transform:translateY('+1100+'px);');
 
-    $('.ms-box').eq(6).attr('data-start','transform:translateY(+'+2200+'px);');
-    $('.ms-box').eq(6).attr('data-end','transform:translateY('+1700+'px);');
+    $('.ms-box').eq(6).attr('data-start','transform:translateY(+'+2300+'px);');
+    $('.ms-box').eq(6).attr('data-end','transform:translateY('+1800+'px);');
 
     $('.ms-box').eq(7).attr('data-start','transform:translateY(+'+1800+'px);');
     $('.ms-box').eq(7).attr('data-end','transform:translateY('+2100+'px);');
